@@ -1,0 +1,5 @@
+flask
+transformers
+torch
+sqlite3
+googletrans==4.0.0-rc1

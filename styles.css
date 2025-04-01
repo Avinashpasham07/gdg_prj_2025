@@ -1,0 +1,74 @@
+/* General Page Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #56CCF2, #2F80ED);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Container */
+.container {
+    width: 40%;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
+}
+
+/* Title Styling */
+h1 {
+    color: #333;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Input Fields */
+input, select {
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Labels */
+label {
+    font-weight: bold;
+    color: #333;
+    font-size: 14px;
+}
+
+/* Buttons */
+.btn {
+    background: #ff9800;
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    width: 95%;
+    margin: 10px auto;
+}
+
+.btn:hover {
+    background: #e68900;
+}
+
+/* Chat Button */
+.chat-btn {
+    background: #4CAF50;
+}
+
+.chat-btn:hover {
+    background: #388E3C;
+}
