@@ -15,14 +15,18 @@
     <script>
         function sendMessage() {
             let message = document.getElementById("userMessage").value;
-            fetch("/chat", {
+            fetch("https://gdg-prj-2025.onrender.com/chat", {  // <-- Updated URL
                 method: "POST",
-                headers: {"Content-Type": "application/json"},
-                body: JSON.stringify({message: message})
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ message: message })
             })
             .then(response => response.json())
             .then(data => {
                 document.getElementById("chatResponse").innerHTML = `<b>AI:</b> ${data.response}`;
+            })
+            .catch(error => {
+                console.error("Error:", error);
+                document.getElementById("chatResponse").innerHTML = `<b>Error:</b> Could not connect to AI service.`;
             });
         }
     </script>
